@@ -24,8 +24,8 @@ const DATA = {
         {"departmen":"Maintenance and Facility","title":"Maintenance"},
     ],
     "details":[
-        {"age":[22,23,24,29,30,32]},
-        {"experience":['2 Tahun','3 Tahun', '4 Tahun', '5 tahun']}
+        {"age":['umur: 22 Tahun','umur: 23 Tahun','umur: 24 tahun','umur: 29 Tahun','umur: 30 Tahun','umur: 32 Tahun']},
+        {"experience":['experience: 2 Tahun','experience: 3 Tahun', 'experience: 4 Tahun', 'experience: 5 tahun']}
     ],
     // name :jhon doe, jobs: department: IT, title: UI/UX, age: 23, experience: 2 Tahun
     //name :anna smith, jobs: department: Human Resources Development, title: SPV, age: 29, experience: 4 Tahun
@@ -38,18 +38,21 @@ const DATA = {
     //name :vicky sasongko, jobs: department: QC, title: QA, age: 24, experience: 2 Tahun
     //name :nadya lembayung, jobs: department: IT, title: Software engineer, age: 23, experience: 2 Tahun
 
-    //percobaan ke -1 stuck
-    printBiodata: (id)=>{
-        const fn = DATA.employess[id].firstName
-        const ln = DATA.employess[id].lastName
-        const job = DATA.jobs[id].departmen
-        const jb = DATA.jobs[id].title
-        // const jb2 = DATA.jobs[0].title[id]
-        const umur = DATA.details[0].age[id]
-        const ex = DATA.details[1].experience[id]
-        console.log(`firstname : ${fn}, lastname : ${ln}, job: ${job}, title ${jb}, age: ${umur}, experience:${ex}`);
-    }
+    // //percobaan ke -1 stuck
+    // printBiodata: (id)=>{
+    //     const fn = DATA.employess[id].firstName
+    //     const ln = DATA.employess[id].lastName
+    //     const job = DATA.jobs[id].departmen
+    //     const jb = DATA.jobs[id].title
+    //     // const jb2 = DATA.jobs[0].title[id]
+    //     const umur = DATA.details[0].age[id]
+    //     const ex = DATA.details[1].experience[id]
+    //     console.log(`firstname : ${fn}, lastname : ${ln}, job: ${job}, title ${jb}, age: ${umur}, experience:${ex}`);
+    // }
 }
+        //cobaan ke 3
+        console.log(DATA.employess[0], DATA.jobs[0].departmen, DATA.jobs[0].title, DATA.details[0].age[0], DATA.details[1].experience[0] )
+        console.log(DATA.employess[1], DATA.jobs[1].departmen, DATA.jobs[1].title, DATA.details[0].age[0], DATA.details[1].experience[0] )
     //percobaan ke-2
     // const DATA = {
     //     "employess" :[
